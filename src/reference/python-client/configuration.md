@@ -2,7 +2,7 @@
 
 Create a `.env` file in your project directory with the following content:
 
-```env
+```ini
 # Example configuration for Stripe
 STRIPE_API_KEY=your_encrypted_stripe_api_key
 
