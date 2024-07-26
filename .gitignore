@@ -1,0 +1,11 @@
+.DS_Store
+.git
+.git/
+.sql/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json.sample
+.vscode/
+.vitepress/dist
+node_modules/
