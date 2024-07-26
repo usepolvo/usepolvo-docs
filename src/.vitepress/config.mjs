@@ -119,25 +119,7 @@ function sidebarReference() {
         },
         {
           text: 'Endpoints',
-          collapsed: true,
-          items: [
-            {
-              text: 'General Endpoints',
-              link: '/api/endpoints/general',
-            },
-            {
-              text: 'Stripe Endpoints',
-              link: '/api/endpoints/stripe',
-            },
-            {
-              text: 'HubSpot Endpoints',
-              link: '/api/endpoints/hubspot',
-            },
-            {
-              text: 'Salesforce Endpoints',
-              link: '/api/endpoints/salesforce',
-            },
-          ],
+          link: '/api/endpoints',
         },
         {
           text: 'Error Handling',
