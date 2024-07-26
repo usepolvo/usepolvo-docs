@@ -8,7 +8,6 @@ export default defineConfig({
 
   dest: '../docs/',
   srcDir: './',
-  base: '/usepolvo-docs/', //TODO: remove this when custom domain is set up
 
   lastUpdated: true,
   cleanUrls: true,
