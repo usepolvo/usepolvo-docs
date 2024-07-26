@@ -7,7 +7,7 @@ export default defineConfig({
   description: '',
 
   dest: '../docs/',
-  srcDir: './src/',
+  srcDir: './',
   base: '/usepolvo-docs/', //TODO: remove this when custom domain is set up
 
   lastUpdated: true,
