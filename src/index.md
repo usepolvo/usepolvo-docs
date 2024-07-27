@@ -2,11 +2,11 @@
 layout: home
 
 title: usepolvo
-titleTemplate: Open-Source IaaS
+titleTemplate: Open-Source iPaaS
 
 hero:
   name: 
-  text: Open-Source Integration as a Service
+  text: Open-Source Integration Platform as a Service
   tagline: Seamless integrations with advanced features
   actions:
     - theme: brand
