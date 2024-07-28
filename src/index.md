@@ -2,7 +2,7 @@
 layout: home
 
 title: usepolvo
-titleTemplate: Open-Source iPaaS
+titleTemplate: Open-Source iPaaS for Devs
 
 hero:
   name: 
