@@ -14,7 +14,7 @@ hero:
       link: /guide/introduction/overview
     - theme: alt
       text: Quickstart
-      link: /guide/installation/prerequisites
+      link: /reference/python-client/introduction
     - theme: alt
       text: GitHub
       link: https://github.com/usepolvo

@@ -118,7 +118,7 @@ function sidebarReference() {
       link: '/python-client/introduction',
       items: [
         {
-          text: 'Introduction to the Python Client',
+          text: 'Introduction',
           link: '/python-client/introduction',
         },
         {
@@ -158,7 +158,7 @@ function sidebarReference() {
       link: '/cli-tool/introduction',
       items: [
         {
-          text: 'Introduction to the CLI Tool',
+          text: 'Introduction',
           link: '/cli-tool/introduction',
         },
         {
