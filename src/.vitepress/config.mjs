@@ -82,24 +82,6 @@ function sidebarGuide() {
         },
       ],
     },
-    {
-      text: 'Installation',
-      link: '/installation/prerequisites',
-      items: [
-        {
-          text: 'Prerequisites',
-          link: '/installation/prerequisites',
-        },
-        {
-          text: 'Installing usepolvo',
-          link: '/installation/installing-usepolvo',
-        },
-        {
-          text: 'Configuration',
-          link: '/installation/configuration',
-        },
-      ],
-    },
   ];
 }
 
