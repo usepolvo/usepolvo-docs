@@ -2,39 +2,48 @@
 layout: home
 
 title: usepolvo
-titleTemplate: Open-Source iPaaS for Devs
+titleTemplate: API Integration Toolkit for Developers
 
 hero:
-  name: 
-  text: Open-Source Integration Platform as a Service
-  tagline: Seamless integrations with advanced features
+  name: usepolvo
+  text: Simplify Your API Integrations
+  tagline: A unified, asynchronous interface for seamless third-party API integrations
   actions:
     - theme: brand
-      text: Introduction
-      link: /guide/introduction/overview
+      text: Get Started
+      link: /guide/getting-started/overview
     - theme: alt
-      text: Quickstart
-      link: /reference/python-client/introduction
-    - theme: alt
-      text: GitHub
+      text: View on GitHub
       link: https://github.com/usepolvo
   image:
     src: /hero.png
     alt: usepolvo
 
 features:
-  - icon: 🐙
-    title: Simplified Integration
-    details: Standardize interactions with various third-party APIs.
+  - icon: 🔗
+    title: Unified Async API Interface
+    details: Interact with all supported services using consistent, asynchronous methods.
   - icon: ⚡
-    title: Advanced Features
-    details: Asynchronous support, rate limiting, caching, logging, and secure storage.
+    title: Universal Async Support
+    details: Enjoy non-blocking I/O operations for all integrations, boosting performance.
+  - icon: 🛡️
+    title: Smart Authentication
+    details: Automatic handling of various auth methods with secure token storage.
+  - icon: 🚦
+    title: Intelligent Rate Limiting
+    details: Built-in rate limit handling and retry logic across all integrations.
+  - icon: 📊
+    title: Universal Pagination
+    details: Consistent data retrieval methods, regardless of the API's native approach.
+  - icon: 🔍
+    title: Standardized Error Handling
+    details: Common error types and handling across all integrations for easier debugging.
+  - icon: 🔔
+    title: Webhook Management
+    details: Unified webhook handling with built-in security and reliability features.
   - icon: 🌐
     title: Open Source
-    details: Free and open-source with comprehensive documentation.
-  - icon: 🔒
-    title: Secure Storage
-    details: Automatically manage and securely store tokens and sensitive data.
+    details: Benefit from community-driven development and transparency.
 ---
 
 <style>

@@ -31,7 +31,7 @@ export default defineConfig({
     siteTitle: false,
     sidebar: {
       '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/reference/': { base: '/reference/', items: sidebarReference() }
+      // '/reference/': { base: '/reference/', items: sidebarReference() }
     },
     nav: navMenu(),
     search: {
@@ -52,35 +52,67 @@ function navMenu() {
   return [
     {
       text: 'Guide',
-      link: '/guide/introduction/overview',
+      link: '/guide/getting-started/overview',
       activeMatch: '/guide/'
     },
-    {
-      text: 'Reference',
-      link: '/reference/api/introduction',
-      activeMatch: '/reference/'
-    },
+    // {
+    //   text: 'Reference',
+    //   link: '/reference/python-client/introduction',
+    //   activeMatch: '/reference/'
+    // },
   ];
 }
+
 function sidebarGuide() {
   return [
     {
-      text: 'Introduction',
-      link: '/introduction/overview',
+      text: 'Getting Started',
+      collapsed: false,
       items: [
-        {
-          text: 'Overview',
-          link: '/introduction/overview',
-        },
-        {
-          text: 'Key Features',
-          link: '/introduction/key-features',
-        },
-        {
-          text: 'Getting Started',
-          link: '/introduction/getting-started',
-        },
-      ],
+        { text: 'Overview', link: '/getting-started/overview' },
+        { text: 'Installation', link: '/getting-started/installation' },
+        { text: 'Quick Start Guide', link: '/getting-started/quick-start' },
+      ]
+    },
+    {
+      text: 'Core Concepts',
+      collapsed: false,
+      items: [
+        { text: 'Unified API Interface', link: '/core-concepts/unified-api' },
+        { text: 'Asynchronous Operations', link: '/core-concepts/async-operations' },
+        { text: 'Authentication', link: '/core-concepts/authentication' },
+        { text: 'Rate Limiting', link: '/core-concepts/rate-limiting' },
+        { text: 'Pagination', link: '/core-concepts/pagination' },
+        { text: 'Error Handling', link: '/core-concepts/error-handling' },
+        { text: 'Webhooks', link: '/core-concepts/webhooks' },
+      ]
+    },
+    // {
+    //   text: 'Advanced Topics',
+    //   collapsed: false,
+    //   items: [
+    //     { text: 'Performance Optimization', link: '/advanced-topics/performance' },
+    //     { text: 'Security Best Practices', link: '/advanced-topics/security' },
+    //     { text: 'Handling API Changes', link: '/advanced-topics/api-changes' },
+    //     { text: 'Custom Integrations', link: '/advanced-topics/custom-integrations' },
+    //   ]
+    // },
+    // {
+    //   text: 'Tutorials',
+    //   collapsed: false,
+    //   items: [
+    //     { text: 'E-commerce Integration', link: '/tutorials/ecommerce-integration' },
+    //     { text: 'CRM Sync', link: '/tutorials/crm-sync' },
+    //   ]
+    // },
+    {
+      text: 'Troubleshooting',
+      collapsed: false,
+      items: [
+        { text: 'Common Issues', link: '/troubleshooting/common-issues' },
+        { text: 'Debugging Tips', link: '/troubleshooting/debugging-tips' },
+        { text: 'FAQ', link: '/troubleshooting/faq' },
+      ]
     },
   ];
 }
@@ -88,200 +120,68 @@ function sidebarGuide() {
 function sidebarReference() {
   return [
     {
-      text: 'API Documentation',
-      link: '/api/introduction',
-      items: [
-        {
-          text: 'Introduction to the API',
-          link: '/api/introduction',
-        },
-        {
-          text: 'Authentication',
-          link: '/api/authentication',
-        },
-        {
-          text: 'Endpoints',
-          link: '/api/endpoints',
-        },
-        {
-          text: 'Error Handling',
-          link: '/api/error-handling',
-        },
-        {
-          text: 'Rate Limiting',
-          link: '/api/rate-limiting',
-        },
-      ],
-    },
-    {
       text: 'Python Client',
-      link: '/python-client/introduction',
+      collapsed: false,
       items: [
-        {
-          text: 'Introduction',
-          link: '/python-client/introduction',
-        },
-        {
-          text: 'Installation',
-          link: '/python-client/installation',
-        },
-        {
-          text: 'Configuration',
-          link: '/python-client/configuration',
-        },
-        {
-          text: 'Usage',
-          collapsed: true,
-          items: [
-            {
-              text: 'Asynchronous Functions',
-              link: '/python-client/usage/async-functions',
-            },
-            {
-              text: 'Synchronous Functions',
-              link: '/python-client/usage/sync-functions',
-            },
-          ],
-        },
-        {
-          text: 'Example Code',
-          link: '/python-client/example-code',
-        },
-        {
-          text: 'Error Handling',
-          link: '/python-client/error-handling',
-        },
-      ],
+        { text: 'Introduction', link: '/python-client/introduction' },
+        { text: 'Client Setup', link: '/python-client/setup' },
+        { text: 'Configuration', link: '/python-client/configuration' },
+        { text: 'Basic Usage', link: '/python-client/basic-usage' },
+        { text: 'Advanced Usage', link: '/python-client/advanced-usage' },
+        { text: 'Best Practices', link: '/python-client/best-practices' },
+      ]
     },
     {
-      text: 'CLI Tool',
-      link: '/cli-tool/introduction',
+      text: 'Integrations',
+      collapsed: false,
       items: [
         {
-          text: 'Introduction',
-          link: '/cli-tool/introduction',
-        },
-        {
-          text: 'Installation',
-          link: '/cli-tool/installation',
-        },
-        {
-          text: 'Configuration',
-          link: '/cli-tool/configuration',
-        },
-        {
-          text: 'Usage',
+          text: 'Stripe',
           collapsed: true,
           items: [
-            {
-              text: 'General Commands',
-              link: '/cli-tool/usage/general-commands',
-            },
-            {
-              text: 'Stripe Commands',
-              link: '/cli-tool/usage/stripe-commands',
-            },
-            {
-              text: 'HubSpot Commands',
-              link: '/cli-tool/usage/hubspot-commands',
-            },
-            {
-              text: 'Salesforce Commands',
-              link: '/cli-tool/usage/salesforce-commands',
-            },
-          ],
+            { text: 'Authentication', link: '/integrations/stripe/authentication' },
+            { text: 'Customers', link: '/integrations/stripe/customers' },
+            { text: 'Payments', link: '/integrations/stripe/payments' },
+            { text: 'Subscriptions', link: '/integrations/stripe/subscriptions' },
+          ]
         },
         {
-          text: 'Example Commands',
-          link: '/cli-tool/example-commands',
+          text: 'HubSpot',
+          collapsed: true,
+          items: [
+            { text: 'Authentication', link: '/integrations/hubspot/authentication' },
+            { text: 'Contacts', link: '/integrations/hubspot/contacts' },
+            { text: 'Deals', link: '/integrations/hubspot/deals' },
+          ]
         },
-        {
-          text: 'Error Handling',
-          link: '/cli-tool/error-handling',
-        },
-      ],
+      ]
     },
     {
-      text: 'Advanced Features',
-      link: '/advanced-features/async-support',
+      text: 'API Reference',
+      collapsed: false,
       items: [
-        {
-          text: 'Asynchronous Support',
-          link: '/advanced-features/async-support',
-        },
-        {
-          text: 'Intelligent Rate Limiting',
-          link: '/advanced-features/rate-limiting',
-        },
-        {
-          text: 'Efficient Caching',
-          link: '/advanced-features/caching',
-        },
-        {
-          text: 'Robust Logging',
-          link: '/advanced-features/logging',
-        },
-        {
-          text: 'Secure Storage',
-          link: '/advanced-features/secure-storage',
-        },
-      ],
+        { text: 'Client API', link: '/api-reference/client-api' },
+        { text: 'Stripe API', link: '/api-reference/stripe-api' },
+        { text: 'HubSpot API', link: '/api-reference/hubspot-api' },
+      ]
     },
     {
       text: 'Contributing',
-      link: '/contributing/how-to-contribute',
+      collapsed: false,
       items: [
-        {
-          text: 'How to Contribute',
-          link: '/contributing/how-to-contribute',
-        },
-        {
-          text: 'Code of Conduct',
-          link: '/contributing/code-of-conduct',
-        },
-        {
-          text: 'Reporting Issues',
-          link: '/contributing/reporting-issues',
-        },
-        {
-          text: 'Submitting Pull Requests',
-          link: '/contributing/submitting-pull-requests',
-        },
-      ],
+        { text: 'How to Contribute', link: '/contributing/how-to-contribute' },
+        { text: 'Development Setup', link: '/contributing/development-setup' },
+        { text: 'Coding Standards', link: '/contributing/coding-standards' },
+        { text: 'Testing', link: '/contributing/testing' },
+      ]
     },
     {
-      text: 'FAQ',
-      link: '/faq/general-questions',
+      text: 'Changelog',
+      collapsed: false,
       items: [
-        {
-          text: 'General Questions',
-          link: '/faq/general-questions',
-        },
-        {
-          text: 'Troubleshooting',
-          link: '/faq/troubleshooting',
-        },
-      ],
-    },
-    {
-      text: 'License',
-      link: '/license/license-information',
-      items: [
-        {
-          text: 'License Information',
-          link: '/license/license-information',
-        },
-      ],
-    },
-    {
-      text: 'Acknowledgments',
-      link: '/acknowledgments/thanks-to-contributors',
-      items: [
-        {
-          text: 'Thanks to Contributors',
-          link: '/acknowledgments/thanks-to-contributors',
-        },
-      ],
+        { text: 'Version History', link: '/changelog/version-history' },
+        { text: 'Migration Guides', link: '/changelog/migration-guides' },
+      ]
     },
   ];
 }
