@@ -41,17 +41,17 @@ A: First, verify that you're using the correct API credentials. Ensure you're no
 A: Enable verbose logging, use try-except blocks to catch specific exceptions, and inspect request/response data. For more detailed tips, see our [Debugging Tips](./debugging-tips) page.
 
 ### Q: usepolvo is running slower than expected. How can I improve performance?
-A: Ensure you're using the asynchronous methods properly. Implement pagination for large datasets. Use bulk operations where available. If issues persist, check our [Performance Optimization](../advanced-topics/performance) guide.
+A: Ensure you're using the asynchronous methods properly. Implement pagination for large datasets. Use bulk operations where available. If issues persist, check our Performance Optimization guide.
 
 ## Contributing and Support
 
 ### Q: How can I contribute to usepolvo?
-A: We welcome contributions! Check our [Contributing Guide](../contributing/how-to-contribute) for information on how to get started.
+A: We welcome contributions! Check our Contributing Guide for information on how to get started.
 
 ### Q: Where can I get help if I'm stuck?
 A: You can ask questions on our GitHub Issues page, join our community chat, or check the documentation. For urgent issues, consider reaching out to our support channels.
 
 ### Q: How often is usepolvo updated?
-A: We strive to release updates regularly. Major versions are released as needed, with minor updates and patches more frequently. Check our [Changelog](../changelog/version-history) for the most up-to-date information.
+A: We strive to release updates regularly. Major versions are released as needed, with minor updates and patches more frequently. Check our Changelog for the most up-to-date information.
 
 Remember, if you can't find an answer to your question here, don't hesitate to reach out to the community or check our more detailed documentation sections.

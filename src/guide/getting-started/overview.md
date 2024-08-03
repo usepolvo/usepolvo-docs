@@ -25,7 +25,7 @@ Currently, usepolvo supports integrations with:
 - Stripe
 - HubSpot
 
-We're continuously working on adding more integrations. Check our [changelog](/changelog/version-history) for updates.
+We're continuously working on adding more integrations. Check our changelog for updates.
 
 ## Why Choose usepolvo?
 
