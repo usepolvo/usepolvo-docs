@@ -1,6 +1,6 @@
 # Installation
 
-Getting started with usepolvo is quick and easy. Follow these steps to install usepolvo in your Python environment.
+Getting started with polvo is quick and easy. Follow these steps to install polvo in your Python environment.
 
 ## Prerequisites
 
@@ -11,7 +11,7 @@ Getting started with usepolvo is quick and easy. Follow these steps to install u
 
 1. Open your terminal or command prompt.
 
-2. Install usepolvo using pip:
+2. Install polvo using pip:
 
 ```bash
 pip install usepolvo
@@ -23,11 +23,11 @@ pip install usepolvo
 pip show usepolvo
 ```
 
-This should display information about the installed usepolvo package, including the version number.
+This should display information about the installed polvo package, including the version number.
 
-## Upgrading usepolvo
+## Upgrading polvo
 
-To upgrade to the latest version of usepolvo, use the following command:
+To upgrade to the latest version of polvo, use the following command:
 
 ```bash
 pip install --upgrade usepolvo
@@ -35,7 +35,7 @@ pip install --upgrade usepolvo
 
 ## Installing from Source
 
-If you prefer to install from source or want to contribute to usepolvo:
+If you prefer to install from source or want to contribute to polvo:
 
 1. Clone the repository:
 
@@ -57,5 +57,5 @@ pip install -e .
 
 ## Next Steps
 
-Now that you have usepolvo installed, you're ready to start integrating APIs into your project. Check out our Quick Start Guide to begin using usepolvo.
+Now that you have polvo installed, you're ready to start integrating APIs into your project. Check out our Quick Start Guide to begin using polvo.
 If you encounter any issues during installation, please refer to our Troubleshooting section or open an issue on our GitHub repository.

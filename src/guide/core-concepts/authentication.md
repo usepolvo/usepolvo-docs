@@ -1,20 +1,20 @@
 # Authentication
 
-Authentication is a crucial aspect of API integration, and usepolvo simplifies this process by providing a unified approach to handling authentication across different services.
+Authentication is a crucial aspect of API integration, and polvo simplifies this process by providing a unified approach to handling authentication across different services.
 
 ## Supported Authentication Methods
 
-usepolvo supports various authentication methods, including:
+polvo supports various authentication methods, including:
 
 - API Keys
 - OAuth 2.0
 - JWT (JSON Web Tokens)
 
-## How Authentication Works in usepolvo
+## How Authentication Works in polvo
 
 1. **Initial Setup**: You provide your authentication credentials when initializing the client for a specific service.
-2. **Automatic Handling**: usepolvo automatically handles the authentication process for each API request.
-3. **Token Refresh**: For OAuth 2.0, usepolvo manages token refresh automatically when necessary.
+2. **Automatic Handling**: polvo automatically handles the authentication process for each API request.
+3. **Token Refresh**: For OAuth 2.0, polvo manages token refresh automatically when necessary.
 
 ## Example: Stripe Authentication
 
@@ -63,4 +63,4 @@ contacts = await client.contacts.list_contacts()
 3. For OAuth 2.0, securely store refresh tokens and handle token revocation when necessary.
 4. Regularly rotate your API keys and secrets.
 
-usepolvo's authentication handling simplifies the process of working with various APIs, allowing you to focus on building your application logic rather than managing different authentication flows.
+polvo's authentication handling simplifies the process of working with various APIs, allowing you to focus on building your application logic rather than managing different authentication flows.

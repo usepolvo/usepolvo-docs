@@ -1,14 +1,14 @@
 # Quick Start Guide
 
-This guide will help you quickly get up and running with usepolvo. We'll use the Stripe integration as an example to demonstrate basic usage.
+This guide will help you quickly get up and running with polvo. We'll use the Stripe integration as an example to demonstrate basic usage.
 
 ## Setup
 
-First, make sure you have usepolvo installed. If not, follow our [Installation Guide](./installation).
+First, make sure you have polvo installed. If not, follow our [Installation Guide](./installation).
 
 ## Initializing the Client
 
-Start by importing the StripeClient from usepolvo and creating a client instance:
+Start by importing the StripeClient from polvo and creating a client instance:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -55,20 +55,20 @@ python stripe_example.py
 
 ## Understanding the Code
 
-- *usepolvo* uses asynchronous programming to improve performance. That's why we use async def and await.
+- *polvo* uses asynchronous programming to improve performance. That's why we use async def and await.
 - The client.customers.list_customers() method returns an iterable of customer objects.
 - The client.customers.create_customer() method creates a new customer and returns the customer object.
 
 ## Next Steps
 
-This is just a basic example of what you can do with usepolvo. To learn more:
+This is just a basic example of what you can do with polvo. To learn more:
 
-1. Explore the Core Concepts to understand the key features of usepolvo.
+1. Explore the Core Concepts to understand the key features of polvo.
 2. Check out the Python Client Reference for detailed API documentation.
 3. Try integrating with other services, like HubSpot.
 
-Remember, usepolvo is designed to provide a consistent interface across different APIs, so the patterns you learn with one integration will apply to others as well.
+Remember, polvo is designed to provide a consistent interface across different APIs, so the patterns you learn with one integration will apply to others as well.
 
 If you encounter any issues or have questions, don't hesitate to check our Troubleshooting section or reach out to the community for help.
 
-Happy coding with usepolvo!
+Happy coding with polvo!

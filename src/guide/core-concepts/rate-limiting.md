@@ -1,12 +1,12 @@
 # Rate Limiting
 
-Rate limiting is a crucial aspect of API integration, ensuring that your application respects the usage limits set by the API providers. usepolvo provides built-in rate limiting features to help you manage this seamlessly.
+Rate limiting is a crucial aspect of API integration, ensuring that your application respects the usage limits set by the API providers. polvo provides built-in rate limiting features to help you manage this seamlessly.
 
-## How Rate Limiting Works in usepolvo
+## How Rate Limiting Works in polvo
 
-1. **Automatic Tracking**: usepolvo keeps track of your API usage for each service.
+1. **Automatic Tracking**: polvo keeps track of your API usage for each service.
 2. **Proactive Throttling**: Requests are automatically delayed if you're approaching the rate limit.
-3. **Retry Mechanism**: If a request fails due to rate limiting, usepolvo will automatically retry after an appropriate delay.
+3. **Retry Mechanism**: If a request fails due to rate limiting, polvo will automatically retry after an appropriate delay.
 
 ## Configuring Rate Limits
 
@@ -20,7 +20,7 @@ client = StripeClient(rate_limit=100)  # Set custom rate limit to 100 requests p
 
 ## Handling Rate Limit Errors
 
-While usepolvo tries to prevent rate limit errors, they can still occur. Here's how to handle them:
+While polvo tries to prevent rate limit errors, they can still occur. Here's how to handle them:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -38,12 +38,12 @@ except RateLimitError as e:
 ## Best Practices
 
 1. *Be Conservative:* Set your rate limits lower than the actual API limits to account for other processes that might be using the same API.
-2. *Implement Backoff:* For critical operations, implement an exponential backoff strategy in addition to usepolvo's built-in retry mechanism.
+2. *Implement Backoff:* For critical operations, implement an exponential backoff strategy in addition to polvo's built-in retry mechanism.
 3. *Monitor Usage:* Keep track of your API usage to anticipate and prevent rate limit issues.
 
 ## Bulk Operations
 
-For bulk operations, usepolvo provides methods that automatically handle rate limiting:
+For bulk operations, polvo provides methods that automatically handle rate limiting:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -55,4 +55,4 @@ async def update_customers(customer_updates):
     # This method will automatically throttle requests to stay within rate limits
 ```
 
-By leveraging usepolvo's rate limiting features, you can build robust applications that efficiently use API resources without the risk of being temporarily blocked due to excessive usage.
+By leveraging polvo's rate limiting features, you can build robust applications that efficiently use API resources without the risk of being temporarily blocked due to excessive usage.

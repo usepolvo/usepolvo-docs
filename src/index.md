@@ -1,11 +1,10 @@
 ---
 layout: home
 
-title: usepolvo
+title: polvo
 titleTemplate: API Integration Toolkit for Developers
 
 hero:
-  name: usepolvo
   text: Simplify Your API Integrations
   tagline: A unified, asynchronous interface for seamless third-party API integrations
   actions:
@@ -17,7 +16,7 @@ hero:
       link: https://github.com/usepolvo
   image:
     src: /hero.png
-    alt: usepolvo
+    alt: polvo
 
 features:
   - icon: 🔗

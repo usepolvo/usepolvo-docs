@@ -1,10 +1,10 @@
 # Debugging Tips
 
-When you encounter issues while using usepolvo, these debugging tips can help you identify and resolve problems more efficiently.
+When you encounter issues while using polvo, these debugging tips can help you identify and resolve problems more efficiently.
 
 ## Enable Verbose Logging
 
-usepolvo provides detailed logging that can be incredibly helpful for debugging. To enable verbose logging:
+polvo provides detailed logging that can be incredibly helpful for debugging. To enable verbose logging:
 
 ```python
 import logging
@@ -85,7 +85,7 @@ This will provide more detailed information about the execution of your async co
 
 ## Check for Version Compatibility
 
-Ensure you're using a compatible version of usepolvo with your Python version and the APIs you're integrating with. You can check the installed version:
+Ensure you're using a compatible version of polvo with your Python version and the APIs you're integrating with. You can check the installed version:
 
 ```python
 import usepolvo

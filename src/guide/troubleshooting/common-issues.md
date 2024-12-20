@@ -1,6 +1,6 @@
 # Common Issues
 
-While using usepolvo, you might encounter some common issues. This guide will help you identify and resolve these problems quickly.
+While using polvo, you might encounter some common issues. This guide will help you identify and resolve these problems quickly.
 
 ## Authentication Errors
 
@@ -26,7 +26,7 @@ While using usepolvo, you might encounter some common issues. This guide will he
 
 **Solutions**:
 1. Implement exponential backoff in your requests
-2. Use usepolvo's built-in rate limiting features
+2. Use polvo's built-in rate limiting features
 3. Optimize your code to reduce the number of API calls
 
 ## Integration-Specific Problems

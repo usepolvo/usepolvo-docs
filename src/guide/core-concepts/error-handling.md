@@ -1,10 +1,10 @@
 # Error Handling
 
-Proper error handling is crucial when working with APIs. usepolvo provides a standardized way to handle errors across different services, making your code more robust and easier to maintain.
+Proper error handling is crucial when working with APIs. polvo provides a standardized way to handle errors across different services, making your code more robust and easier to maintain.
 
 ## Unified Error Types
 
-usepolvo defines a set of common error types that you'll encounter across different API integrations:
+polvo defines a set of common error types that you'll encounter across different API integrations:
 
 - `ApiError`: Base class for all API-related errors
 - `AuthenticationError`: Issues with API keys or authentication tokens
@@ -15,7 +15,7 @@ usepolvo defines a set of common error types that you'll encounter across differ
 
 ## Handling Errors
 
-Here's an example of how to handle errors in usepolvo:
+Here's an example of how to handle errors in polvo:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -37,7 +37,7 @@ except ApiError as e:
 
 ## Error Attributes
 
-usepolvo error objects contain useful information to help you diagnose and handle the error:
+polvo error objects contain useful information to help you diagnose and handle the error:
 
 ```python
 try:
@@ -50,7 +50,7 @@ except ApiError as e:
 
 ## Retry Mechanism
 
-For certain types of errors (like temporary server issues or rate limit errors), usepolvo includes a built-in retry mechanism:
+For certain types of errors (like temporary server issues or rate limit errors), polvo includes a built-in retry mechanism:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -73,4 +73,4 @@ customer = await get_customer('cus_123456789')
 4. Use the retry decorator for operations that might fail due to temporary issues.
 5. Provide meaningful error messages to your users when API operations fail.
 
-By leveraging usepolvo's standardized error handling, you can create more resilient applications that gracefully handle various API-related issues.
+By leveraging polvo's standardized error handling, you can create more resilient applications that gracefully handle various API-related issues.

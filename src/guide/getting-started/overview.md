@@ -1,10 +1,10 @@
 # Overview
 
-Welcome to usepolvo, the open-source API integration toolkit designed to simplify how developers interact with third-party services. Our mission is to streamline the process of integrating multiple APIs into your applications, allowing you to focus on building features rather than wrestling with integration complexities.
+Welcome to polvo, the open-source API integration toolkit designed to simplify how developers interact with third-party services. Our mission is to streamline the process of integrating multiple APIs into your applications, allowing you to focus on building features rather than wrestling with integration complexities.
 
-## What is usepolvo?
+## What is polvo?
 
-usepolvo is a unified, asynchronous interface for multiple APIs. It handles the intricate details of API integration, providing you with a consistent and efficient way to work with various services.
+polvo is a unified, asynchronous interface for multiple APIs. It handles the intricate details of API integration, providing you with a consistent and efficient way to work with various services.
 
 ## Key Features
 
@@ -20,14 +20,14 @@ usepolvo is a unified, asynchronous interface for multiple APIs. It handles the 
 
 ## Supported Integrations
 
-Currently, usepolvo supports integrations with:
+Currently, polvo supports integrations with:
 
 - Stripe
 - HubSpot
 
 We're continuously working on adding more integrations. Check our changelog for updates.
 
-## Why Choose usepolvo?
+## Why Choose polvo?
 
 1. **Simplicity**: Reduce the complexity of working with multiple APIs.
 2. **Consistency**: Use the same patterns across different integrations.
@@ -35,4 +35,4 @@ We're continuously working on adding more integrations. Check our changelog for 
 4. **Scalability**: Easily add new integrations as your needs grow.
 5. **Community-Driven**: Open-source with active community support.
 
-Ready to get started? Check out our [Installation Guide](./installation) to begin your journey with usepolvo.
+Ready to get started? Check out our [Installation Guide](./installation) to begin your journey with polvo.

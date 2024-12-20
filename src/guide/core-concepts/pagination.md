@@ -1,10 +1,10 @@
 # Pagination
 
-When working with APIs, it's common to deal with large sets of data that are split into multiple pages. usepolvo provides a unified approach to pagination across different services, simplifying the process of retrieving and processing large datasets.
+When working with APIs, it's common to deal with large sets of data that are split into multiple pages. polvo provides a unified approach to pagination across different services, simplifying the process of retrieving and processing large datasets.
 
 ## Unified Pagination Interface
 
-usepolvo abstracts away the differences in pagination mechanisms used by different APIs, providing a consistent interface:
+polvo abstracts away the differences in pagination mechanisms used by different APIs, providing a consistent interface:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -33,7 +33,7 @@ next_customers = await client.customers.list_customers(page=2, size=100)
 
 ## Async Iteration
 
-For efficient processing of large datasets, usepolvo supports async iteration:
+For efficient processing of large datasets, polvo supports async iteration:
 
 ```python
 async for customer in client.customers.iter_customers(batch_size=100):
@@ -60,4 +60,4 @@ print(f"Next page: {metadata.next_page}")
 3. Be mindful of rate limits when dealing with large datasets.
 4. Consider using background jobs for very large data synchronization tasks.
 
-usepolvo's unified pagination approach allows you to write clean, efficient code for data retrieval across different APIs, improving the maintainability and performance of your applications.
+polvo's unified pagination approach allows you to write clean, efficient code for data retrieval across different APIs, improving the maintainability and performance of your applications.

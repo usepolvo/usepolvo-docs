@@ -1,6 +1,6 @@
 # Asynchronous Operations
 
-usepolvo is built with asynchronous programming at its core, leveraging Python's `asyncio` library to provide efficient, non-blocking I/O operations.
+polvo is built with asynchronous programming at its core, leveraging Python's `asyncio` library to provide efficient, non-blocking I/O operations.
 
 ## Why Asynchronous?
 
@@ -10,13 +10,13 @@ Asynchronous programming allows your application to perform multiple I/O operati
 - Handle high concurrency efficiently
 - Improve overall application performance
 
-## How It Works in usepolvo
+## How It Works in polvo
 
-All API operations in usepolvo are designed to be used asynchronously. This means you'll be using `async/await` syntax when working with usepolvo.
+All API operations in polvo are designed to be used asynchronously. This means you'll be using `async/await` syntax when working with polvo.
 
 ## Example
 
-Here's a simple example of how asynchronous operations work in usepolvo:
+Here's a simple example of how asynchronous operations work in polvo:
 
 ```python
 import asyncio
@@ -47,4 +47,4 @@ In this example, the customer list and charge list are fetched concurrently, pot
 3. Use `asyncio.run()` to run your main async function if you're not in an async context.
 4. Consider using `async for` for paginated results to process items as they become available.
 
-By leveraging usepolvo's asynchronous design, you can build highly efficient applications that can handle multiple API interactions smoothly and quickly.
+By leveraging polvo's asynchronous design, you can build highly efficient applications that can handle multiple API interactions smoothly and quickly.

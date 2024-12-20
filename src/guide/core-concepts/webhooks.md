@@ -1,14 +1,14 @@
 # Webhooks
 
-Webhooks are a crucial component of many API integrations, allowing your application to receive real-time updates from the services you're integrating with. usepolvo provides a unified interface for handling webhooks across different services.
+Webhooks are a crucial component of many API integrations, allowing your application to receive real-time updates from the services you're integrating with. polvo provides a unified interface for handling webhooks across different services.
 
 ## Webhook Basics
 
 Webhooks are HTTP callbacks that are triggered by specific events in the source system. They allow your application to be notified immediately when something happens, rather than having to poll the API for changes.
 
-## Setting Up Webhooks with usepolvo
+## Setting Up Webhooks with polvo
 
-usepolvo simplifies the process of setting up and handling webhooks:
+polvo simplifies the process of setting up and handling webhooks:
 
 ```python
 from usepolvo.stripe import StripeWebhookHandler
@@ -42,7 +42,7 @@ async def stripe_webhook(request: Request):
 
 ## Webhook Verification
 
-usepolvo automatically handles webhook signature verification to ensure that the incoming webhooks are legitimate:
+polvo automatically handles webhook signature verification to ensure that the incoming webhooks are legitimate:
 
 ```python
 try:
@@ -78,7 +78,7 @@ async def handle_subscription_updated(event):
 
 ## Testing Webhooks
 
-usepolvo provides tools to help you test your webhook handling:
+polvo provides tools to help you test your webhook handling:
 
 ```python
 from usepolvo.stripe import StripeWeb

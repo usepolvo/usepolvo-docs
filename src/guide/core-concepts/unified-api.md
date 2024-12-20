@@ -1,6 +1,6 @@
 # Unified API Interface
 
-usepolvo's Unified API Interface is a core feature that simplifies working with multiple third-party APIs by providing a consistent pattern for interactions across different services.
+polvo's Unified API Interface is a core feature that simplifies working with multiple third-party APIs by providing a consistent pattern for interactions across different services.
 
 ## Key Benefits
 
@@ -10,11 +10,11 @@ usepolvo's Unified API Interface is a core feature that simplifies working with 
 
 ## How It Works
 
-usepolvo abstracts away the differences between various APIs, presenting a uniform interface for common operations. For example, whether you're working with Stripe, HubSpot, or any other supported service, you'll use similar methods for operations like creating, reading, updating, or deleting resources.
+polvo abstracts away the differences between various APIs, presenting a uniform interface for common operations. For example, whether you're working with Stripe, HubSpot, or any other supported service, you'll use similar methods for operations like creating, reading, updating, or deleting resources.
 
 ## Example
 
-Here's how you might interact with different services using usepolvo's unified interface:
+Here's how you might interact with different services using polvo's unified interface:
 
 ```python
 from usepolvo.stripe import StripeClient
@@ -40,6 +40,6 @@ Notice how the method names and structure are similar across different services.
 
 ## Customization
 
-While usepolvo provides a unified interface, it also allows for service-specific customization when necessary. You can always access service-specific features when needed.
+While polvo provides a unified interface, it also allows for service-specific customization when necessary. You can always access service-specific features when needed.
 
-By leveraging usepolvo's Unified API Interface, you can significantly reduce the complexity of working with multiple APIs in your projects.
+By leveraging polvo's Unified API Interface, you can significantly reduce the complexity of working with multiple APIs in your projects.

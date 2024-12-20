@@ -33,7 +33,7 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#1255FE' }],
     ['meta', { name: 'og:type', content: 'website' }],
     ['meta', { name: 'og:locale', content: 'en' }],
-    ['meta', { name: 'og:site_name', content: 'usepolvo devs' }],
+    ['meta', { name: 'og:site_name', content: 'polvo devs' }],
   ],
 
   // https://vitepress.dev/reference/default-theme-config
@@ -49,7 +49,7 @@ export default defineConfig({
       provider: 'local',
     },
     footer: {
-      message: 'Made with 💜 in Brazil © 2024 usepolvo',
+      message: 'Made with 💜 in Brazil © 2024 polvo',
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/usepolvo' }
