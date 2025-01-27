@@ -49,7 +49,7 @@ export default defineConfig({
       provider: 'local',
     },
     footer: {
-      message: 'Made with 💜 in Brazil © 2024 polvo',
+      message: `Made with 💜 in Brazil © ${new Date().getFullYear()} polvo`,
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/usepolvo' }
