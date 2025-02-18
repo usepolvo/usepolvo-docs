@@ -132,12 +132,6 @@ POLVO_ENCRYPTION_KEY=your_encryption_key
 POLVO_CLAUDE_API_KEY=your_claude_api_key  # For Brain system
 ```
 
-## Next Steps
-
-1. Explore our [examples](https://github.com/usepolvo/examples)
-2. Join our [Discord community](https://discord.gg/polvo)
-3. Check out the [API reference](https://api.usepolvo.com)
-
 ## Troubleshooting
 
 ### Common Issues
@@ -157,4 +151,4 @@ POLVO_CLAUDE_API_KEY=your_claude_api_key  # For Brain system
    - Use proper type hints
    - Validate data before sending
 
-For more help, visit our [GitHub issues](https://github.com/usepolvo/usepolvo/issues) or join our Discord.
+For more help, visit our [GitHub issues](https://github.com/usepolvo/polvo-python/issues) or join our Discord.
